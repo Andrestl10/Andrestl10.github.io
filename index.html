@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clasificador de Imagenes</h1>
+        <!-- <div><canvas id="canvas"></canvas></div> -->
+        <button id="btn-img" class="btn" type="button" onclick="img()">Imagenes</button>
+        <button id="btn-sound" class="btn" type="button" onclick="sound()">Sonidos</button>
+        <button id="btn-move" class="btn" type="button" onclick="move()">Posturas</button>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script> -->
+
+    <script src="app.js"></script>
+    <script src="./scripts/scriptImg.js"></script>
+    <script src="./scripts/scriptSound.js"></script>
+    <!-- <script src="./scripts/scriptMove.js"></script> -->
+
+</body>
+
+</html>
